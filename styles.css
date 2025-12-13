@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --deep-blue: #0a0e1a;
+    --night-blue: #0f1629;
+    --cosmic-purple: #1a1035;
+    --main-gold: #ffd700;
+    --star-gold: #ffd700;
+    --accent-yellow: #f4c542;
+    --accent-yellow-dark: #d4a520;
+    --glow-blue: #4a9eff;
+    --glow-purple: #9d4edd;
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--deep-blue);
+    color: var(--text-primary);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.cosmic-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #050510 0%, #0a0e1a 20%, #0f1629 50%, #1a1035 80%, #0d0d1a 100%);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.stars-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.stars-small {
+    background-image: radial-gradient(1px 1px at 20px 30px, white, transparent), radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 90px 40px, white, transparent), radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 160px 120px, white, transparent), radial-gradient(1px 1px at 200px 50px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 220px 90px, white, transparent), radial-gradient(1px 1px at 250px 150px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 280px 30px, white, transparent), radial-gradient(1px 1px at 310px 100px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 340px 60px, white, transparent), radial-gradient(1px 1px at 70px 200px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 120px 250px, white, transparent),
+        radial-gradient(1px 1px at 180px 220px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 240px 280px, white, transparent), radial-gradient(1px 1px at 300px 230px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 350px 270px, white, transparent), radial-gradient(1px 1px at 30px 350px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 80px 400px, white, transparent), radial-gradient(1px 1px at 150px 380px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 210px 420px, white, transparent), radial-gradient(1px 1px at 270px 360px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 330px 400px, white, transparent), radial-gradient(1px 1px at 60px 480px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 110px 530px, white, transparent), radial-gradient(1px 1px at 190px 500px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 260px 550px, white, transparent),
+        radial-gradient(1px 1px at 320px 490px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 100px 600px, white, transparent), radial-gradient(1px 1px at 200px 620px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 280px 580px, white, transparent), radial-gradient(1px 1px at 50px 700px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 150px 750px, white, transparent), radial-gradient(1px 1px at 250px 720px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 350px 680px, white, transparent);
+    background-size: 100% 100%;
+    animation: twinkle 4s ease-in-out infinite;
+}
+
+.stars-medium {
+    background-image: radial-gradient(2px 2px at 100px 100px, #fff, transparent), radial-gradient(2px 2px at 200px 200px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 300px 150px, #fff, transparent), radial-gradient(2px 2px at 50px 300px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 150px 400px, #fff, transparent), radial-gradient(2px 2px at 250px 350px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 320px 450px, #fff, transparent), radial-gradient(2px 2px at 80px 550px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 180px 600px, #fff, transparent), radial-gradient(2px 2px at 280px 650px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 120px 750px, #fff, transparent);
+    animation: twinkle 3s ease-in-out infinite 0.5s;
+}
+
+.stars-large {
+    background-image: radial-gradient(3px 3px at 60px 180px, #ffd700, transparent), radial-gradient(3px 3px at 180px 80px, rgba(255, 215, 0, 0.8), transparent), radial-gradient(3px 3px at 300px 280px, #ffd700, transparent), radial-gradient(3px 3px at 120px 450px, rgba(255, 215, 0, 0.9), transparent), radial-gradient(3px 3px at 250px 520px, #ffd700, transparent), radial-gradient(3px 3px at 80px 700px, rgba(255, 215, 0, 0.8), transparent);
+    animation: twinkle 5s ease-in-out infinite 1s;
+}
+
+@keyframes twinkle {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.constellation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.constellation line {
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-width: 0.5;
+    filter: drop-shadow(0 0 2px rgba(74, 158, 255, 0.5));
+}
+
+.constellation circle {
+    fill: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+}
+
+.cosmic-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.glow-1 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(74, 158, 255, 0.4) 0%, transparent 70%);
+    top: -100px;
+    right: -100px;
+}
+
+.glow-2 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(157, 78, 221, 0.3) 0%, transparent 70%);
+    bottom: 150px;
+    left: -120px;
+}
+
+.glow-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+    top: 45%;
+    right: -50px;
+}
+
+.screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.screen .content {
+    width: 100%;
+    height: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: env(safe-area-inset-top, 20px) 24px env(safe-area-inset-bottom, 20px);
+}
+
+.screen-1 .content {
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.3px;
+}
+
+.main-headline-year {
+    color: var(--main-gold);
+}
+
+.wheel-picker-container {
+    width: 100%;
+    max-width: 300px;
+    height: 240px;
+    position: relative;
+    margin-bottom: 48px;
+}
+
+.wheel-picker {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.6) 25%, black 40%, black 60%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.2) 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.6) 25%, black 40%, black 60%, rgba(0, 0, 0, 0.6) 75%, rgba(0, 0, 0, 0.2) 90%, transparent 100%);
+}
+
+.wheel-picker-inner {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.wheel-item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-muted);
+    transition: all 0.25s ease;
+    cursor: pointer;
+    gap: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.wheel-item.active {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+.wheel-item .symbol {
+    font-size: 22px;
+    opacity: 0.6;
+    transition: all 0.25s ease;
+}
+
+.wheel-item.active .symbol {
+    font-size: 30px;
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    color: var(--star-gold);
+}
+
+.wheel-highlight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 24px);
+    height: 52px;
+    background: rgba(255, 255, 255, 0.06);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    pointer-events: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(74, 158, 255, 0.15);
+}
+
+.confirm-btn {
+    width: 100%;
+    max-width: 300px;
+    height: 58px;
+    background: linear-gradient(135deg, var(--main-gold) 0%, var(--accent-yellow-dark) 100%);
+    border: none;
+    border-radius: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a2a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 25px rgba(244, 197, 66, 0.35), 0 0 50px rgba(244, 197, 66, 0.2);
+    letter-spacing: 0.5px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.confirm-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 15px rgba(244, 197, 66, 0.3), 0 0 30px rgba(244, 197, 66, 0.15);
+}
+
+.screen-2 .content {
+    padding-top: calc(env(safe-area-inset-top, 20px) + 20px);
+    padding-bottom: calc(env(safe-area-inset-bottom, 20px) + 20px);
+    justify-content: center;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+}
+
+.logo-placeholder {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--star-gold);
+}
+
+.zodiac-icon {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.result-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(22px, 5.5vw, 26px);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+    flex-shrink: 0;
+}
+
+.result-headline .sign-name {
+    color: var(--star-gold);
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+.glass-card {
+    flex: 0 1 auto;
+    max-height: 60vh;
+    background: rgba(255 255 255 / 17%);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 0px 14px 4px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    overflow-y: auto;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+}
+
+.horoscope-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.85;
+    color: var(--text-secondary);
+}
+
+.horoscope-text p {
+    margin-bottom: 18px;
+}
+
+.horoscope-text p:last-child {
+    margin-bottom: 0;
+}
+
+.date-badge {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    border-radius: 24px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--star-gold);
+    margin-bottom: 20px;
+    letter-spacing: 0.3px;
+}
+
+.back-btn {
+    width: 100%;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    flex-shrink: 0;
+}
+
+.back-btn:active {
+    background: rgba(255, 255, 255, 0.12);
+    transform: scale(0.98);
+}
+
+.glass-card::-webkit-scrollbar {
+    width: 4px;
+}
+
+.glass-card::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.glass-card::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+}
+
+@media (max-height: 700px) {
+    .main-headline {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+
+    .wheel-picker-container {
+        height: 200px;
+        margin-bottom: 32px;
+    }
+
+    .confirm-btn {
+        height: 52px;
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0a0a12;
+    }
+
+    .cosmic-bg {
+        max-width: 430px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 40px;
+        height: calc(100% - 40px);
+        top: 20px;
+    }
+
+    .screen {
+        max-width: 430px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: calc(100% - 40px);
+        top: 20px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+}
