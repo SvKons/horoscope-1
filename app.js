@@ -6,8 +6,6 @@ function initWheelPicker() {
     const confirmBtn = document.getElementById('confirmBtn');
 
     const itemHeight = 48;
-    const visibleItems = 5;
-    const centerOffset = Math.floor(visibleItems / 2) * itemHeight;
 
     let currentIndex = 0;
     let startY = 0;
@@ -24,9 +22,6 @@ function initWheelPicker() {
         item.dataset.index = index;
         wheelInner.appendChild(item);
     });
-
-    wheelInner.style.top = `${centerOffset}px`;
-
     function updateActiveItem(index) {
         const items = wheelInner.querySelectorAll('.wheel-item');
         items.forEach((item, i) => {
@@ -37,7 +32,8 @@ function initWheelPicker() {
     function scrollToIndex(index, animated = true) {
         index = Math.max(0, Math.min(index, zodiacSigns.length - 1));
         currentIndex = index;
-        const offset = -index * itemHeight;
+
+        const offset = -(index * itemHeight + itemHeight / 2);
 
         if (animated) {
             wheelInner.style.transition = 'transform 0.35s cubic-bezier(0.23, 1, 0.32, 1)';
@@ -46,7 +42,7 @@ function initWheelPicker() {
         }
 
         wheelInner.style.transform = `translateY(${offset}px)`;
-        currentOffset = offset;
+        currentOffset = -index * itemHeight;
         updateActiveItem(index);
     }
 
@@ -89,7 +85,8 @@ function initWheelPicker() {
             newOffset = minOffset + (newOffset - minOffset) * 0.3;
         }
 
-        wheelInner.style.transform = `translateY(${newOffset}px)`;
+        const visualOffset = newOffset - itemHeight / 2;
+        wheelInner.style.transform = `translateY(${visualOffset}px)`;
     }
 
     function handleEnd(e) {
@@ -142,7 +139,6 @@ function initWheelPicker() {
             scrollToIndex(index, true);
         }
     });
-
     scrollToIndex(0, false);
 
     confirmBtn.addEventListener('click', () => {
@@ -151,5 +147,4 @@ function initWheelPicker() {
         window.location.href = 'result.html';
     });
 }
-
 document.addEventListener('DOMContentLoaded', initWheelPicker);
