@@ -2,16 +2,18 @@ import { zodiacSigns } from '../data.js';
 
 function createSnowflakes() {
     const snowfall = document.getElementById('snowfall');
-    const flakeCount = 50;
+    const flakeCount = 40;
 
     for (let i = 0; i < flakeCount; i++) {
         const flake = document.createElement('div');
         flake.className = 'snowflake';
 
-        const size = Math.random() * 4 + 2;
+        const size = Math.random() * 28 + 12;
         const left = Math.random() * 100;
-        const duration = Math.random() * 5 + 8;
-        const delay = Math.random() * 10;
+        const duration = Math.random() * 8 + 10;
+        const rotation = Math.random() * 360;
+        const opacity = 0.4 + Math.random() * 0.6;
+        const delay = -(Math.random() * duration);
 
         flake.style.cssText = `
             width: ${size}px;
@@ -19,6 +21,8 @@ function createSnowflakes() {
             left: ${left}%;
             animation-duration: ${duration}s;
             animation-delay: ${delay}s;
+            --rotation: ${rotation}deg;
+            opacity: ${opacity};
         `;
 
         snowfall.appendChild(flake);
