@@ -1,7 +1,7 @@
 import { zodiacSigns, horoscopes } from './data.js';
 
 function initResultPage() {
-    const zodiacIcon = document.getElementById('zodiacIcon');
+    const signIcon = document.getElementById('signIcon');
     const signName = document.getElementById('signName');
     const dateBadge = document.getElementById('dateBadge');
     const horoscopeText = document.getElementById('horoscopeText');
@@ -16,8 +16,8 @@ function initResultPage() {
         sign = zodiacSigns[0];
     }
 
-    zodiacIcon.src = sign.img;
-    zodiacIcon.alt = sign.name;
+    signIcon.src = sign.img;
+    signIcon.alt = sign.name;
     signName.textContent = sign.nameGen;
     dateBadge.textContent = sign.dates;
 

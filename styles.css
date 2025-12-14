@@ -291,10 +291,15 @@ img {
     box-shadow: 0 3px 15px rgba(244, 197, 66, 0.3), 0 0 30px rgba(244, 197, 66, 0.15);
 }
 
+.screen-2 {
+    overflow-y: auto;
+}
+
 .screen-2 .content {
-    padding-top: calc(env(safe-area-inset-top, 20px) + 20px);
-    padding-bottom: calc(env(safe-area-inset-bottom, 20px) + 20px);
-    justify-content: center;
+    height: auto;
+    min-height: 100%;
+    padding-top: calc(env(safe-area-inset-top, 20px) + 30px);
+    padding-bottom: calc(env(safe-area-inset-bottom, 20px) + 30px);
 }
 
 .result-header {
@@ -341,7 +346,7 @@ img {
 }
 
 .glass-card {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     max-height: 60vh;
     background: rgba(255 255 255 / 17%);
     backdrop-filter: blur(24px);
