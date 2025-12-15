@@ -73,20 +73,33 @@ img {
 }
 
 .stars-small {
-    background-image: radial-gradient(1px 1px at 20px 30px, white, transparent), radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 90px 40px, white, transparent), radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 160px 120px, white, transparent), radial-gradient(1px 1px at 200px 50px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 220px 90px, white, transparent), radial-gradient(1px 1px at 250px 150px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 280px 30px, white, transparent), radial-gradient(1px 1px at 310px 100px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 340px 60px, white, transparent), radial-gradient(1px 1px at 70px 200px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 120px 250px, white, transparent),
-        radial-gradient(1px 1px at 180px 220px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 240px 280px, white, transparent), radial-gradient(1px 1px at 300px 230px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 350px 270px, white, transparent), radial-gradient(1px 1px at 30px 350px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 80px 400px, white, transparent), radial-gradient(1px 1px at 150px 380px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 210px 420px, white, transparent), radial-gradient(1px 1px at 270px 360px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 330px 400px, white, transparent), radial-gradient(1px 1px at 60px 480px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 110px 530px, white, transparent), radial-gradient(1px 1px at 190px 500px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 260px 550px, white, transparent),
-        radial-gradient(1px 1px at 320px 490px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 100px 600px, white, transparent), radial-gradient(1px 1px at 200px 620px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 280px 580px, white, transparent), radial-gradient(1px 1px at 50px 700px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 150px 750px, white, transparent), radial-gradient(1px 1px at 250px 720px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 350px 680px, white, transparent);
+    background-image: radial-gradient(1px 1px at 20px 30px, white, transparent), radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 90px 40px, white, transparent), radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 160px 120px, white, transparent),
+        radial-gradient(1px 1px at 200px 50px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 220px 90px, white, transparent), radial-gradient(1px 1px at 250px 150px, rgba(255, 255, 255, 0.8), transparent),
+        radial-gradient(1px 1px at 280px 30px, white, transparent), radial-gradient(1px 1px at 310px 100px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 340px 60px, white, transparent),
+        radial-gradient(1px 1px at 70px 200px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 120px 250px, white, transparent), radial-gradient(1px 1px at 180px 220px, rgba(255, 255, 255, 0.5), transparent),
+        radial-gradient(1px 1px at 240px 280px, white, transparent), radial-gradient(1px 1px at 300px 230px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 350px 270px, white, transparent),
+        radial-gradient(1px 1px at 30px 350px, rgba(255, 255, 255, 0.6), transparent), radial-gradient(1px 1px at 80px 400px, white, transparent), radial-gradient(1px 1px at 150px 380px, rgba(255, 255, 255, 0.7), transparent),
+        radial-gradient(1px 1px at 210px 420px, white, transparent), radial-gradient(1px 1px at 270px 360px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 330px 400px, white, transparent),
+        radial-gradient(1px 1px at 60px 480px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(1px 1px at 110px 530px, white, transparent), radial-gradient(1px 1px at 190px 500px, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 260px 550px, white, transparent), radial-gradient(1px 1px at 320px 490px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 100px 600px, white, transparent),
+        radial-gradient(1px 1px at 200px 620px, rgba(255, 255, 255, 0.5), transparent), radial-gradient(1px 1px at 280px 580px, white, transparent), radial-gradient(1px 1px at 50px 700px, rgba(255, 255, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 150px 750px, white, transparent), radial-gradient(1px 1px at 250px 720px, rgba(255, 255, 255, 0.7), transparent), radial-gradient(1px 1px at 350px 680px, white, transparent);
     background-size: 100% 100%;
     animation: twinkle 4s ease-in-out infinite;
 }
 
 .stars-medium {
-    background-image: radial-gradient(2px 2px at 100px 100px, #fff, transparent), radial-gradient(2px 2px at 200px 200px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 300px 150px, #fff, transparent), radial-gradient(2px 2px at 50px 300px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 150px 400px, #fff, transparent), radial-gradient(2px 2px at 250px 350px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 320px 450px, #fff, transparent), radial-gradient(2px 2px at 80px 550px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 180px 600px, #fff, transparent), radial-gradient(2px 2px at 280px 650px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 120px 750px, #fff, transparent);
+    background-image: radial-gradient(2px 2px at 100px 100px, #fff, transparent), radial-gradient(2px 2px at 200px 200px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 300px 150px, #fff, transparent),
+        radial-gradient(2px 2px at 50px 300px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 150px 400px, #fff, transparent), radial-gradient(2px 2px at 250px 350px, rgba(255, 255, 255, 0.9), transparent),
+        radial-gradient(2px 2px at 320px 450px, #fff, transparent), radial-gradient(2px 2px at 80px 550px, rgba(255, 255, 255, 0.8), transparent), radial-gradient(2px 2px at 180px 600px, #fff, transparent),
+        radial-gradient(2px 2px at 280px 650px, rgba(255, 255, 255, 0.9), transparent), radial-gradient(2px 2px at 120px 750px, #fff, transparent);
     animation: twinkle 3s ease-in-out infinite 0.5s;
 }
 
 .stars-large {
-    background-image: radial-gradient(3px 3px at 60px 180px, #ffd700, transparent), radial-gradient(3px 3px at 180px 80px, rgba(255, 215, 0, 0.8), transparent), radial-gradient(3px 3px at 300px 280px, #ffd700, transparent), radial-gradient(3px 3px at 120px 450px, rgba(255, 215, 0, 0.9), transparent), radial-gradient(3px 3px at 250px 520px, #ffd700, transparent), radial-gradient(3px 3px at 80px 700px, rgba(255, 215, 0, 0.8), transparent);
+    background-image: radial-gradient(3px 3px at 60px 180px, #ffd700, transparent), radial-gradient(3px 3px at 180px 80px, rgba(255, 215, 0, 0.8), transparent), radial-gradient(3px 3px at 300px 280px, #ffd700, transparent),
+        radial-gradient(3px 3px at 120px 450px, rgba(255, 215, 0, 0.9), transparent), radial-gradient(3px 3px at 250px 520px, #ffd700, transparent), radial-gradient(3px 3px at 80px 700px, rgba(255, 215, 0, 0.8), transparent);
     animation: twinkle 5s ease-in-out infinite 1s;
 }
 
@@ -440,10 +453,31 @@ img {
     transform: scale(0.98);
 }
 
+.result-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--snow-white);
+    flex-shrink: 0;
+}
+
+.sign-icon-box {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-self: center;
+}
+
+.main-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
 @media (max-height: 700px) {
     .main-headline {
         font-size: 26px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     .wheel-picker-container {
