@@ -67,14 +67,27 @@
                     <img src="img/lev.png" alt="Знак зодиака" id="signIcon" />
                 </div>
 
-                <h2 class="result-title">Предсказание для <span class="sign-name" id="signName">Льва</span></h2>
+                <h2 class="result-headline"><span class="sign-name"></span>: <span class="sign-tagline"></span></h2>
+                <p class="sign-dates-sub"></p>
 
                 <div class="glass-card">
                     <div class="glass-card-content">
-                        <div class="date-label" id="dateLabel">23 июля — 22 августа</div>
                         <div class="horoscope-body" id="horoscopeBody">
                             <p>Загрузка...</p>
                         </div>
+                        <ul class="horoscope-details" id="horoscopeDetails"></ul>
+                    </div>
+                </div>
+
+                <div class="advice-block">
+                    <p><strong>Главный совет:</strong> <span id="adviceText"></span></p>
+                </div>
+
+                <h2 class="result-headline-faq">Словарик для <span class="sign-name-gen"></span></h2>
+
+                <div class="glass-card__faq">
+                    <div class="glass-inner__faq">
+                        <ul class="questions__list" id="dictionaryList"></ul>
                     </div>
                 </div>
 
@@ -82,6 +95,8 @@
             </div>
         </div>
 
-        <script type="module" src="result.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script type="module" src="scripts/result.js"></script>
+        <script src="scripts/acco.js"></script>
     </body>
 </html>

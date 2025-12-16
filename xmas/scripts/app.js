@@ -1,4 +1,4 @@
-import { zodiacSigns } from '../data.js';
+import {zodiacSigns} from './data.js';
 
 function createSnowflakes() {
     const snowfall = document.getElementById('snowfall');

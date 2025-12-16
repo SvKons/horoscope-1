@@ -5,6 +5,7 @@
     --night-blue: #0d1f3c;
     --midnight: #132744;
     --snow-white: #ffffff;
+    --main-gold: #ffd700;
     --gold-warm: #ffd966;
     --gold-bright: #ffe066;
     --gold-dark: #d4a520;
@@ -437,6 +438,58 @@ img {
     text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
+.result-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(20px, 5vw, 24px);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+    flex-shrink: 0;
+    color: var(--main-gold);
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+.result-headline-faq {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(20px, 5vw, 24px);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+    letter-spacing: -0.2px;
+    flex-shrink: 0;
+    color: var(--main-gold);
+    text-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+.sign-dates-sub {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.advice-block {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.05) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    padding: 18px 22px;
+    margin-bottom: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.advice-block p {
+    margin: 0;
+}
+
+.advice-block strong {
+    color: var(--main-gold);
+    font-weight: 600;
+}
+
 .glass-card {
     flex: 0 0 auto;
     max-height: 60vh;
@@ -508,6 +561,43 @@ img {
 
 .horoscope-body p:last-child {
     margin-bottom: 0;
+}
+
+.horoscope-body strong {
+    color: var(--main-gold);
+    font-weight: 600;
+}
+
+.horoscope-details {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.horoscope-details li {
+    margin-bottom: 12px;
+}
+
+.horoscope-details li:last-child {
+    margin-bottom: 0;
+}
+
+.horoscope-details li::marker {
+    color: var(--main-gold);
+}
+
+.horoscope-details strong {
+    color: var(--main-gold);
+    font-weight: 600;
+}
+
+.horoscope-details .horoscope-details-title {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .btn-back {
@@ -583,4 +673,86 @@ img {
         border-radius: 40px;
         overflow: hidden;
     }
+}
+
+/* FAQ */
+
+.glass-card__faq {
+    flex: 0 0 auto;
+    margin-bottom: 34px;
+}
+
+.glass-inner__faq {
+    height: 100%;
+}
+
+.questions {
+    background-color: var(--white);
+    background-image: url('../img/thai-flag.png');
+    background-position: 6% 19%;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.questions__title {
+    padding-bottom: 30px;
+}
+.questions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.questions__item {
+    display: block;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0px 14px 4px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+    background: rgba(255 255 255 / 17%);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+.questions__expand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 18px;
+}
+.questions__question {
+    font-weight: 500;
+    font-size: 18px;
+}
+.questions__word {
+    color: var(--main-gold);
+}
+.questions__answer {
+    display: none;
+    line-height: 22px;
+    padding: 10px 18px;
+}
+.questions__text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.questions__text_position {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.questions__arrow {
+    font-weight: 700;
+    font-size: 1.5rem;
+    align-content: center;
+}
+.questions__link {
+    text-decoration: none;
+    color: var(--zian-green);
+}
+.questions__link:hover {
+    text-decoration: underline;
 }
